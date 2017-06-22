@@ -1,0 +1,9 @@
+.font-color-64{
+    color: #646464;
+    position: relative;
+}
+.forn{
+    position: absolute;
+    bottom: 12px;
+}
+table th{text-align: center;}

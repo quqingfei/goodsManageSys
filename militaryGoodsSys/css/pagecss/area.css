@@ -1,0 +1,48 @@
+.echarts:hover{
+	box-shadow: 0 0 25px -10px #8B8B8B;
+}
+.echarts{transition:all 0.2s;}
+.text-16{font-size: 14px;}
+.clearn{
+    border: none;
+    background: white;
+    outline: none;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+.wid50-detale{
+    overflow: hidden;
+}
+.wid50{
+    width: 50%;
+    float: left;
+    background: #1ab394;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-size: 14px;
+}
+.wid50:hover{
+    cursor: pointer;
+    background: #18A689;
+}
+.wids{
+    background: #18A689;
+}
+.proimg{width: 100%}
+.proimg img{width: 100%;height: 100%; display: block;}
+
+.backblue{
+    background: #1ab394;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0;
+}
+.line-height-37{line-height: 37px;height: 37px;}
+.rigisebtn a{display: block;width: 80%;margin: 2px auto;background: #20CBA9;text-align: center;  padding: 4px 0;color: white;transition:all 0.2s;}
+.rigisebtn a:hover{background: #257968;}
+.detials{display: none;overflow: hidden;}
+.adminlist{display: none;}
+.duoweitu{display: none;}
+.choosedate{line-height: 34px;float: left; font-size: 14px;}
+.datadaydes{line-height: 34px;font-size: 14px;}

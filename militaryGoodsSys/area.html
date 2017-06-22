@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+    
+
+    <title>xx物资管理系统 - 管理处概况</title>
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/plugins/layui/layui.css" rel="stylesheet">
+    <link href="js/plugins/layer/laydate/need/laydate.css" rel="stylesheet">
+    <link href="js/plugins/layer/laydate/skins/default/laydate.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.2.0" rel="stylesheet">
+    <link href="css/pagecss/area.css" rel="stylesheet">
+
+</head>
+<!-- navbar-static-side 加主色调 -->
+<body>
+    <div class="wrapper wrapper-content animated fadeIn">
+       
+            <div class="row ibox-content" style="margin: 0;padding: 13px 0px 10px 0px;">
+                <div class="col-sm-12">
+                    <span>库号</span>
+                    <select class="" name="account">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row ibox-content" style="margin: 0;padding: 13px 0px 10px 0px;">
+                <div class="c">
+                    <div class="col-sm-3">仪器序列号:<span>688967743451145</span></div>
+                    <div class="col-sm-3">状态:<span>|||</span></div>
+                    <div class="col-sm-3">工作时间:<span>8654</span>小时</div>
+                    <div class="col-sm-3">采集时间:<span>2016-05-24 23:25:45</span></div>   
+                </div>
+            </div>
+            <div class="row ibox-content" style="margin: 0;">
+                <div class="c">
+                    <div class="col-sm-4">                    
+                        <div class="">
+                            <h5>实时温度</h5>
+                        </div>
+                        <div class="echarts" id="echarts-gauge0-chart"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="">
+                            <h5>露点温度</h5>
+                        </div>
+                        <div class="echarts" id="echarts-gauge1-chart"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="">
+                            <h5>实时湿度</h5>
+                        </div>
+                        <div class="echarts" id="echarts-gauge2-chart"></div>
+                    </div> 
+                </div>
+                <div class="col-sm-12">
+                    <div class="row text-14">
+                        <div class="col-sm-4">预警范围:</div>
+                        <div class="col-sm-4">温度：-5~30</div>
+                        <div class="col-sm-4">湿度：45%-80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ibox-content" style="margin: 0;padding: 13px 0px 10px 0px;">
+                <div class="col-sm-4"><input class="form-control layer-date laydate-icon" style="width:34px;border:none;cursor: pointer;float:left" onclick="laydate({istime: false,format: 'YYYY-MM-DD',choose:function(datas){$('.choosedate').html(datas)}})"><div class="choosedate">2016-06-02</div></div>
+                <div class="col-sm-4 text-center datadaydes">1日-31日</div>
+            </div>
+            <div class="row ibox-content" style="margin:0;border-top:none;">
+                <div class="col-sm-12">
+                    <div class="echarts" id="echarts-line-chart"></div>
+                </div>
+            </div>
+    </div>
+    </script>
+    
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+     <!-- ECharts -->
+    <script src="js/plugins/echarts/echarts-all.js"></script>
+    <!-- 自定义js -->
+    <script src="js/content.min.js"></script>
+     <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <!-- 日期插件 -->
+    <script src="js/plugins/layer/laydate/laydate.js"></script>
+<!--  myjs  -->
+   <script src="js/pagejs/area.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+        console.log(window.datastart)
+    </script>
+</body>
+
+</html>

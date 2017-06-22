@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>XX物资管理系统 - 注册</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/plugins/layui/layui.css" rel="stylesheet">
+    <link href="js/plugins/layer/laydate/need/laydate.css" rel="stylesheet">
+    <link href="js/plugins/layer/laydate/skins/default/laydate.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.2.0" rel="stylesheet">
+    <link href="css/pagecss/register.css" rel="stylesheet">
+     <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <script>if(window.top !== window.self){ window.top.location = window.location;}</script>
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="mid-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">LOGO</h1>
+
+            </div>
+            <h3>欢迎注册XX物资管理系统</h3>
+            <p>正在创建一个新账户</p>
+            <form class="m-t" role="form" action="login.html">
+<!--
+               <div class="form-group">
+                                
+
+                                <div class="col-sm-8">
+                                    <input type="email" placeholder="用户名" class="form-control"> <span class="help-block m-b-none">请输入您注册时所填的E-mail</span>
+                                </div>
+                            </div>
+-->
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0"><span class="text-danger">*</span>用户名：</label>
+                   <div class="col-sm-9">
+                        <input type="text" id="username" class="form-control" placeholder="请输入用户名" required="">
+                        <samll class='text-left help-block m-b-none text-gruy username'>用户名为英文或数字组成, 不超过20位</samll>            
+                    </div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0"><span class="text-danger">*</span>密码：</label>
+                   <div class="col-sm-9">
+                        <input type="password" id="password" class="form-control" placeholder="请输入密码" required="">   
+                        
+                    <input type="password" id="repassword" class="form-control" placeholder="请再次输入密码" required="">
+                         <samll class='text-left help-block m-b-none text-gruy password'>密码为英文或数字组成, 不少于6位</samll>
+                    </div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0"><span class="text-danger">*</span>手机号码：</label>
+                   <div class="col-sm-9">
+                        <input type="number" id="phonenumber" class="form-control" placeholder="请输入手机号码" required="">
+                        <samll class='text-left help-block m-b-none phonenumber'></samll>       
+                    </div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0"><span class="text-danger">*</span>用户角色：</label>
+                   <div class="col-sm-9">
+                      <select class="form-control" id="authority" name="account">
+                                        <option value="">请选择</option>
+                                        <option value="1">超级管理员</option>
+                                        <option value="2">管理员</option>
+                                        <option value="3">普通用户</option>
+                                        <option value="4">访客</option>
+                        </select>
+                        <samll class='text-left help-block m-b-none authority'></samll>       
+                    </div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0"><span class="text-danger">*</span>电子邮箱：</label>
+                   <div class="col-sm-9">
+                        <input type="email" id="email" class="form-control" placeholder="请输入E-mail" required="">  
+                        <samll class='text-left help-block m-b-none email'></samll>      
+                    </div>                    
+                </div>
+                <div class="text-left control-label lineheight-24 margin_0"><h4 class="text-gruy">选填：</h4></div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0">姓名：</label>
+                   <div class="col-sm-9">
+                        <input type="text" id="name" class="form-control" placeholder="请输入姓名" required="">
+                        <samll class='text-left help-block m-b-none text-gruy name'></samll>            
+                    </div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                  <label class="col-sm-3 text-right control-label lineheight-24 margin_0">性别：</label>
+                  <div class="col-sm-5" id="sex" style="margin-bottom:15px;padding:6px 15px;">
+                       <label class="checkbox-inline i-checks">
+                        <input type="radio" value="man" name="sex"><i></i>男</label>
+                        <label class="checkbox-inline i-checks">
+                        <input type="radio" value="woman" name="sex"><i></i>女</label>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0">接手时间：</label>
+                   <div class="col-sm-9">
+                              <input class="form-control layer-date laydate-icon" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss',choose:function(datas){$('.startdate').html(datas)}})">    
+                    </div>
+                    <div class="startdate hide"></div>                    
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0">结束时间：</label>
+                   <div class="col-sm-9">
+                              <input class="form-control layer-date laydate-icon" id="enddate" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss',choose:function(datas){$('.enddate').html(datas)}})">    
+                    </div>  
+                    <div class="enddate hide"></div>                  
+                </div>
+                <div class="form-group margin-b-4 row">
+                   <label class="col-sm-3 text-right control-label lineheight-24 margin_0">备注：</label>
+                   <div class="col-sm-9">
+                         <textarea id="remarks" name="remarks" class="form-control" required="" aria-required="true"></textarea>   
+                    </div>  
+                    <div class="enddate hide"></div>                  
+                </div>
+<!--
+                <div class="form-group text-left">
+                    <div class="checkbox i-checks">
+                        <label class="no-padding">
+                            <input type="checkbox"><i></i> 我同意注册协议</label>
+                    </div>
+                </div>
+-->
+               
+                <button type="button" id="registerbtn" class="btn btn-primary block full-width m-b">注 册</button>
+
+                <p class="text-muted text-center"><small>已经有账户了？</small><a href="login.html">点此登录</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/pagejs/register.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script src="js/plugins/layer/laydate/laydate.js"></script>
+     <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+        console.log(window.datastart)
+    </script>
+
+</body>
+
+</html>

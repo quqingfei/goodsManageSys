@@ -1,0 +1,21 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+.mid-box{
+    width: 320px;
+    margin: 0 auto;
+}
+.lineheight-24{
+    line-height: 34px;
+}
+.margin_0{
+    padding: 0;
+}
+.margin-b-4{
+    margin-bottom: 4px
+}
+.text-gruy{color: #BFBFBF}

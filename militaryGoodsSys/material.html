@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+    
+
+    <title>xx物资管理系统 - 管理处概况</title>
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.2.0" rel="stylesheet">
+    <link href="css/pagecss/list.css" rel="stylesheet">
+    <link href="css/pagecss/material.css" rel="stylesheet">
+</head>
+<!-- navbar-static-side 加主色调 -->
+<body>
+    <div class="wrapper wrapper-content animated fadeIn">
+       
+            <div class="row ibox-content" style="margin: 0;padding: 13px 0px 10px 0px;">
+                <div class="col-sm-12 danxuan">
+                       <div class="btn-group roll-nav roll-left">
+                        <button class="dropdown clearn" data-toggle="dropdown">操作<span class="caret"></span>
+
+                        </button>
+                        <ul role="menu" class="dropdown-menu dropdown-menu-left">
+                            <li class="J_tabShowActive"><a>删除</a>
+                            </li>
+                        </ul>
+                    </div>
+                   <label class="checkbox-inline i-checks">
+                    <input type="radio" value="list" name="radiobtn" checked><i></i>所有</label>
+                    <label class="checkbox-inline i-checks">
+                    <input type="radio" value="detial" name="radiobtn"><i></i>单个库</label>
+                    <span>库号</span>
+                    <select class="" name="account">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-sm-12">
+                 <div class="ibox float-e-margins">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="ibox-content">
+                                    <div class="echarts" style="height:300px"  id="echarts-pie-chart"></div>
+                                </div>
+                            </div>    
+                            <div class="col-sm-5 font-color-64">
+                                <div class="row ibox-content" style="height:335px;margin-right:0">
+                                   <div class="col-sm-6 tesa">物资类型：<span>火工</span></div>
+                                   <div class="col-sm-6 tesa">总批数：<span>44</span></div>
+                                   <div class="col-sm-6 tesa">物资种类：<span>44</span></div>
+                                   <div class="col-sm-6 tesa">总净重：<span>44</span></div>
+                                   <div class="col-sm-6 tesa">总占面积：<span>44</span></div>
+                                   <div class="col-sm-6 tesa">总毛重：<span>44</span></div>
+                                   <div class="col-sm-6 tesa">占用跺位：<span>44</span></div>
+                                </div>
+                                   
+                                <div class="forn">
+                                    <div class="col-sm-6 tesa">最早批次：<span>44</span></div>
+                                    <div class="col-sm-6 tesa">最迟批次：<span>44</span></div>
+                                </div>
+                            </div>                    
+                        </div>
+                        
+                        <div class="lists">
+                            <div class="ibox-content table-responsive" style="padding:0 10px">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>库号</th>
+                                            <th>名称</th>
+                                            <th>编号</th>
+                                            <th>类型</th>
+                                            <th>厂家</th>
+                                            <th>批次</th>
+                                            <th>规格</th>
+                                            <th>数量</th>
+                                            <th>毛重</th>
+                                            <th>净重</th>
+                                            <th>生产时间</th>
+                                            <th>入库时间</th>
+                                            <th>出库时间</th>
+                                            <th>跺位号</th>
+                                            <th>录入人</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-navy">
+                                        <tr>
+                                            <td><input type="checkbox" class="i-checks" name="input[]"></td>
+                                            <td>1</td>
+                                            <td><span class="line">WESX</span></td>
+                                            <td>2223N23</td>
+                                            <td>种子</td>
+                                            <td>山东XX二厂</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>3000</td>
+                                            <td>122</td>
+                                            <td>110</td>
+                                            <td>2009-02-12</td>
+                                            <td>2010-12-03</td>
+                                            <td>2012-10-11</td>
+                                            <td>2</td>
+                                            <td>xxx</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+      
+            
+        </div>
+    </div>
+    </script>
+    
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+     <!-- ECharts -->
+    <script src="js/plugins/echarts/echarts-all.js"></script>
+    <!-- 自定义js -->
+    <script src="js/content.min.js"></script>
+     <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <!--  myjs  -->
+   <script src="js/pagejs/material.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+        console.log(window.datastart)
+    </script>
+</body>
+
+</html>

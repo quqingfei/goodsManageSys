@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+</head>
+<body>
+    <div>username: <input class="username" type="text"></div>
+    <div>password: <input class="password" type="text"></div>
+    <input type="button" class="login" value="LOGIN">
+</body>
+<script>
+    $('.login').click(function(){
+        var username = $('.username').val().trim();
+        var password = $('.password').val().trim();
+        $.ajax({
+            type: 'get',
+             url: '../../websrvZniot/login',
+            data: {
+                username:username,
+                password:password
+            },
+            success: function(data){
+                if(data.statusCode){
+                    alert('登录成功!');
+                }else{
+                    alert('账号或密码错误!');
+                }
+            },
+            error: function(err){
+                console.log(err);
+            }
+        })
+    })
+</script>
+</html>

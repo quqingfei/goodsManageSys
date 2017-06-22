@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+    
+
+    <title>xx物资管理系统 - 管理处概况</title>
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.2.0" rel="stylesheet">
+    <link href="css/pagecss/list.css" rel="stylesheet">
+    <link href="css/pagecss/material.css" rel="stylesheet">
+</head>
+<!-- navbar-static-side 加主色调 -->
+<body>
+    <div class="wrapper wrapper-content animated fadeIn">
+                <div class="row">
+                <div class="col-sm-12">
+                 <div class="ibox float-e-margins"> 
+                       <div class="row">
+                            <div class="col-sm-6">
+                                <form role="form" class="form-inline">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail2" class="sr-only">用户名</label>
+                                            <input type="email" placeholder="请输入标题" id="exampleInputEmail2" class="form-control">
+                                        </div>
+                                        <button class="btn btn-white" style="margin-bottom:0;outline:none" type="button">搜索</button>
+                                    </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <div style="overflow:hidden;float:right;">
+                                    <button type="button" class="btn btn-outline btn-primary">新增</button>
+                                    <button type="button" class="btn btn-outline btn-success">编辑</button>
+                                    <button type="button" class="btn btn-outline btn-danger">删除</button>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="lists">
+                            <div class="ibox-content table-responsive" style="padding:0 10px">
+                                <table class="table table-hover text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>序号</th>
+                                            <th>设备类型</th>
+                                            <th>接口说明</th>
+                                            <th>接口</th>
+                                            <th>编辑时间</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-navy">
+                                        <tr>
+                                            <td><input type="checkbox" class="i-checks" name="input[]"></td>
+                                            <td>1</td>
+                                            <td><span class="line">WIFI-传感器</span></td>
+                                            <td>获取温湿度</td>
+                                            <td>http://wise.zniot.com:8080/page?functiontype=28&terminalId=</td>
+                                            <td>2016-07-04 03:22:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+      
+            
+        </div>
+    </div>
+    </script>
+    
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+     <!-- ECharts -->
+    <script src="js/plugins/echarts/echarts-all.js"></script>
+    <!-- 自定义js -->
+    <script src="js/content.min.js"></script>
+     <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <!--  myjs  -->
+   <script src="js/pagejs/material.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+        console.log(window.datastart)
+    </script>
+</body>
+
+</html>
